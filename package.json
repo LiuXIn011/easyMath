@@ -1,0 +1,24 @@
+{
+  "name": "soeasymath",
+  "version": "1.0.3",
+  "description": "soeasymath.js for Javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiuXIn011/easyMath.git"
+  },
+  "keywords": [
+    "javascript",
+    "math"
+  ],
+  "author": "liuxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LiuXIn011/easyMath/issues"
+  },
+  "homepage": "https://github.com/LiuXIn011/easyMath#readme"
+}
