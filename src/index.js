@@ -42,7 +42,7 @@ const getMaxDecimalDigits = function () {
   return maxDecimalDigits
 }
 // 科学计数法转字符串
-export const scientificNotationToString = function (number) {
+const scientificNotationToString = function (number) {
   let numberString = String(number)
   try {
     // 正整数
@@ -72,7 +72,7 @@ export const scientificNotationToString = function (number) {
   }
 }
 // 除法
-export const division = function () {
+const division = function () {
   // 计算结果
   let maxDecimalDigits = getMaxDecimalDigits(arguments)
   let results = toInteger(arguments[0], maxDecimalDigits)
@@ -84,11 +84,11 @@ export const division = function () {
   return results
 }
 // 除法别名
-export const chufa = division
-export const chu = division
+const chufa = division
+const chu = division
 
 // 乘法
-export const multiplication = function () {
+const multiplication = function () {
   // 计算倍数
   let maxDecimalDigits = getMaxDecimalDigits(arguments)
   let times = Math.pow(10, maxDecimalDigits);
@@ -102,11 +102,11 @@ export const multiplication = function () {
   return results
 }
 // 乘法别名
-export const chengfa = multiplication
-export const cheng = multiplication
+const chengfa = multiplication
+const cheng = multiplication
 
 // 减法
-export const subtraction = function () {
+const subtraction = function () {
   // 计算倍数
   let maxDecimalDigits = getMaxDecimalDigits(arguments)
   let times = Math.pow(10, maxDecimalDigits);
@@ -120,11 +120,11 @@ export const subtraction = function () {
   return results
 }
 // 减法别名
-export const jianfa = subtraction
-export const jian = subtraction
+const jianfa = subtraction
+const jian = subtraction
 
 // 加法
-export const addition = function () {
+const addition = function () {
   // 计算倍数
   let maxDecimalDigits = getMaxDecimalDigits(arguments)
   let times = Math.pow(10, maxDecimalDigits);
@@ -139,5 +139,21 @@ export const addition = function () {
 
 }
 // 加法别名
-export const jiafa = addition
-export const jia = addition
+const jiafa = addition
+const jia = addition
+
+module.exports = {
+  scientificNotationToString,
+  division,
+  chufa,
+  chu,
+  multiplication,
+  chengfa,
+  cheng,
+  subtraction,
+  jianfa,
+  jian,
+  addition,
+  jiafa,
+  jia,
+}
