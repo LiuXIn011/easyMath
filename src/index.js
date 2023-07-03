@@ -79,7 +79,7 @@ const division = function () {
   for (let i = 1; i < arguments.length; i++) {
     results = results / toInteger(arguments[i], maxDecimalDigits)
   }
-  results = toInteger(results, arguments.length - 2)
+  // results = toInteger(results, arguments.length - 2)
   // 返回结果
   return results
 }
